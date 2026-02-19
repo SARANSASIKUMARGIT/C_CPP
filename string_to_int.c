@@ -10,7 +10,7 @@ int char_to_int(char* str,int n)
     for(int i=0;i<n;++i)
     {
         num*=10;
-        num+=(int)(48-((int)*(str+i)));
+        num+=(int)(str[i]-48);
     }
     return num;
 }
