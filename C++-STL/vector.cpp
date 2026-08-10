@@ -19,6 +19,7 @@ int main()
     vector<int> v2(5);          //declaring vector with capacity 5
     vector<int> v3(3,0);        //declaring vector with 3 elements of value 0 = {0,0,0}
     vector<int> v4={10,23,11,100,125};      //declaring vector with initializer list
+    v4.reserve(20);                  //reserving atleast capacity of 20 elements in vector4
 
     //displaying size and capacity of the vectors
     cout<<v1.size()<<" "<<v2.size()<<" "<<v3.size()<<" "<<endl;
